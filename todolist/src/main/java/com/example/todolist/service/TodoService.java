@@ -1,5 +1,6 @@
 package com.example.todolist.service;
 
+import com.sun.org.apache.xalan.internal.xsltc.compiler.Sort;
 import java.util.List;
 
 import org.springframework.data.domain.Sort;
@@ -31,7 +32,7 @@ public class TodoService{
     }
 
     public List<Todo> list(){
-        Sort formato = Sort.by("prioridade").descending();
+        Sort formato = Sort.sort(Todo.class).by(Todo::getPrioridade).descending();
         return todoRepository.findAll(formato);
     }
 

@@ -1,0 +1,19 @@
+header{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 2vh 7vh;
+}
+
+ul{
+    display: flex;
+    gap: 15%;
+    padding: 0vh 5vh;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.item{}

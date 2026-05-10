@@ -1,8 +1,19 @@
 header{
+    color: #ffff;
     justify-content: space-between;
     align-items: center;
     display: flex;
     padding: 2vh 7vh;
+    background-color:#224e82;
+}
+
+input{
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 1vh;
+    font-family: inherit;
+    height: 23px;
+    font-size: 16px;
 }
 
 ul{
@@ -12,8 +23,112 @@ ul{
     list-style: none;
 }
 
+text{
+    padding-left: 1%;
+    padding-right: 13%;
+}
+
 a{
+    color: #ffff;
     text-decoration: none;
 }
 
-.item{}
+.container-input{
+    gap: 2%;
+    display: flex;
+    margin-right: 8%;
+    margin-bottom: 2%;
+}
+
+.input-nome{
+    width:70%;
+}
+.input-desc{
+    width:50%;
+}
+.input-pri{
+    width:30%;
+}
+
+.logo{
+    height: 15%;
+    width: 15%;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    padding: 7%;
+}
+
+.container-central{
+    background-color: #ffff;
+    padding-left: 7%;
+    padding-top: 3%;
+    border-radius: 2vh;
+    
+}
+
+.container-menu{
+    padding-left: 3%;
+    margin-right: 9%;
+    margin-bottom: 5%;
+    border-radius: 2vh;
+    border: 1px solid #072141;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.container-input {
+    display: flex;
+    gap: 15px; /* Espaçamento entre os campos */
+    margin-right: 3%; /* Ajustado para não fugir da borda do menu */
+    margin-bottom: 2%;
+    align-items: flex-end; /* Alinha o fundo dos campos */
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-nome { width: 40%; }
+.flex-desc { width: 40%; }
+.flex-pri  { width: 15%; }
+
+input, textarea, select {
+    width: 100%; 
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 1vh;
+    font-family: inherit;
+    font-size: 16px;
+    box-sizing: border-box; /* Fundamental para o padding não quebrar o layout */
+}
+
+input, select {
+    height: 35px; /* Um pouco mais alto para melhor usabilidade */
+}
+
+textarea {
+    height: 35px;
+    resize: none; /* Impede o usuário de bagunçar o layout */
+    padding-top: 5px;
+}
+
+.btn-add {
+    margin-bottom: 20px;
+    padding: 8px 20px;
+    background-color: #224e82;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
